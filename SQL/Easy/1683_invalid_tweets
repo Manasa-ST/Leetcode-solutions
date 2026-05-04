@@ -1,0 +1,10 @@
+-- Problem: 1683. Invalid Tweets
+-- Difficulty: Easy
+
+-- Approach:
+-- A tweet is invalid if its content length exceeds 15 characters.
+-- Use LENGTH() function and filter rows where content length > 15.
+
+SELECT tweet_id
+FROM Tweets
+WHERE LENGTH(content) > 15;
